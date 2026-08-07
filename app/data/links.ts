@@ -53,6 +53,16 @@ export const links: LinkItem[] = [
     hoverShadow: "hover:shadow-[0_0_20px_rgba(244,114,182,0.4)]",
   },
   {
+    id: "github",
+    title: "GitHub",
+    url: "https://github.com/igdiaysu",
+    icon: Palette,
+    iconColor: "text-zinc-400",
+    borderColor: "border-zinc-400/40",
+    hoverBorder: "hover:border-zinc-400/60",
+    hoverShadow: "hover:shadow-[0_0_20px_rgba(161,161,170,0.4)]",
+  },
+  {
     id: "twitch",
     title: "Twitch",
     url: "https://twitch.tv/aysart",
