@@ -28,7 +28,7 @@ export default function Home() {
       </div>
       <h1 className="text-3xl font-bold mb-1 tracking-tight text-foreground/95">AysArt</h1>
       <p className="text-muted-foreground text-base mb-10 font-medium text-center max-w-75">
-        In my twenties, low-key; part artist, part sudoku enthusiast, and a true-crime fan 🕵🏻‍♀️
+        Yirmili yaşlarda, kendi halinde; biraz çizer, biraz sudoku delisi, biraz suç düşkünü birisi 🕵🏻‍♀️
       </p>
 
       {/* Render the social link buttons. */}
