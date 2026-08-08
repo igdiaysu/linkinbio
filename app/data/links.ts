@@ -1,4 +1,4 @@
-import { MonitorPlay, Palette, Globe, Camera, LucideIcon } from "lucide-react";
+import { MonitorPlay, Palette, Globe, Camera, LucideIcon, CodeXml } from "lucide-react";
 
 export interface LinkItem {
   id: string;
@@ -56,7 +56,7 @@ export const links: LinkItem[] = [
     id: "github",
     title: "GitHub",
     url: "https://github.com/igdiaysu",
-    icon: Palette,
+    icon: CodeXml,
     iconColor: "text-zinc-400",
     borderColor: "border-zinc-400/40",
     hoverBorder: "hover:border-zinc-400/60",
