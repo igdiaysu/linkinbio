@@ -41,10 +41,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={cn("h-full", "antialiased", geistSans.variable, geistMono.variable, "font-sans", inter.variable)}
     >
       <body className="min-h-full flex flex-col bg-background text-foreground antialiased">
+        {/* Provide global theme context for the whole app. */}
         <ThemeProvider
           attribute="class"
-          defaultTheme="system" // Varsayılanı Sistem teması yapar
-          enableSystem          // İşletim sistemi tercihlerini okur
+          defaultTheme="system" // Use the operating system theme as the default.
+          enableSystem          // Read and follow the user's system theme preference.
           disableTransitionOnChange
         >
           {children}

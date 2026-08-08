@@ -8,40 +8,30 @@ export default function Home() {
   return (
     <main className="flex flex-col min-h-screen items-center px-4 pt-16 pb-8">
 
-      {/* Sağ Üst Köşeye Sabitlenmiş Tema Butonu */}
+      {/* Floating theme switcher in the top-right corner. */}
       <div className="absolute top-4 right-4">
         <ModeToggle />
       </div>
 
-      {/* ... Diğer profil ve buton kodların ... */}
-      {/* Profil / Logo Alanı - Güncellendi */}
+      {/* Profile/logo area. */}
       <div className="mb-6 hover:scale-105 transition-transform duration-300 cursor-pointer animate-[popIn_0.9s_ease-out]">
-        {/* Yuvarlak çerçeve, border ve gölge efektleri cilalandı */}
         <div className="w-28 h-28 rounded-full overflow-hidden border-2 border-white/10 shadow-[0_0_20px_rgba(255,255,255,0.08)] bg-zinc-950 flex items-center justify-center">
-          {/* Placeholder yazı yerine gerçek Image bileşeni eklendi */}
-          {/* public/ klasöründeki logo.png'yi çeker */}
           <Image
-            src="/ays-logo.jpg" // public klasöründeki dosya adınla eşleşmeli
+            src="/ays-logo.jpg"
             alt="AysArt Logo"
-            width={112} // w-28 = 28 * 4px = 112px
-            height={112} // h-28 = 112px
+            width={112}
+            height={112}
             className="w-full h-full object-cover"
-            priority // Sayfa yüklendiğinde bu görsele öncelik ver
+            priority
           />
         </div>
       </div>
-
-      {/* İsim Tipografisi - Boyut ve Keskinlik Güncellendi */}
       <h1 className="text-3xl font-bold mb-1 tracking-tight text-foreground/95">AysArt</h1>
-
-      {/* Unvan Tipografisi - Boyut ve Renk Tonu Güncellendi */}
       <p className="text-muted-foreground text-base mb-10 font-medium text-center max-w-75">
-        Yirmili yaşlarda, kendi halinde; biraz çizer, biraz sudoku delisi, biraz suç düşkünü birisi 🕵🏻‍♀️
-        {/* <br />tasarımcı ve geliştirici */}
+        In my twenties, low-key; part artist, part sudoku enthusiast, and a true-crime fan 🕵🏻‍♀️
       </p>
 
-
-      {/* Linkler Alanı */}
+      {/* Render the social link buttons. */}
       <div className="flex flex-col gap-4 w-full max-w-95">
         {links.map((link) => {
           const Icon = link.icon;
