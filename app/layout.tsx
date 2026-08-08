@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     url: 'https://www.igdiaysu.com',
     siteName: 'AysArt | Link in Bio',
     images: [{
-      url: '../public/ays-logo.jpg',
+      url: '../public/og.webp',
       width: 1200,
       height: 630,
       alt: "AysArt Logo",
